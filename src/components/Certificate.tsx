@@ -47,10 +47,13 @@ export function Certificate() {
           className="pointer-events-none absolute inset-[14px] rounded-[2px] border border-rule"
         />
 
-        {/* Corner rosettes, clipped by the frame */}
+        {/* Corner rosettes, clipped by the frame. Pushed well past the
+            corner on purpose: a rosette has an empty centre, and left nearer
+            the edge that hole sits under the header line and reads as a
+            blemish rather than as engraving. */}
         <Guilloche
-          className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 text-green"
-          opacity={0.22}
+          className="pointer-events-none absolute -top-40 -left-40 h-80 w-80 text-green"
+          opacity={0.24}
         />
         <Guilloche
           className="pointer-events-none absolute -right-28 -bottom-28 h-80 w-80 text-green"
